@@ -1,6 +1,6 @@
 # 🎬 Movie Recommendation System (MovieLens 1M)
 
-![Recommender Banner](https://miro.medium.com/v2/resize:fit:1358/1*oRj6ZveHFkNjEcNWef39hw.png)
+![Recommender Banner](results/banner.png)
 
 ## 📌 Overview
 This project implements a **comprehensive movie recommendation system** on the [MovieLens 1M dataset](https://grouplens.org/datasets/movielens/1m/).  
@@ -60,6 +60,9 @@ The project is structured as a progressive pipeline where each stage builds towa
 - **Session-based** → *Aladdin 2, Space Jam, Pete’s Dragon*  
 - **Hybrid** → Combines all three, improving personalization and diversity.  
 
+![System Flow Diagram](results/flow_diagram.png)  
+*End-to-end recommendation pipeline.*
+
 ## 📂 Dataset
 - **Source**: [MovieLens 1M](https://grouplens.org/datasets/movielens/1m/)  
 - **Size**: 6,040 users, 3,883 movies, 1,000,209 ratings  
@@ -72,3 +75,22 @@ Clone the repository and install dependencies:
 git clone https://github.com/hira-14/movie_recommender.git
 cd movie_recommender
 pip install -r requirements.txt
+```
+
+Run notebooks in order:
+
+```bash
+jupyter notebook notebooks/01_data_exploration.ipynb
+```
+
+## 💡 Key Skills Demonstrated
+- **End-to-End ML Workflow**: from EDA to deployment-ready models.  
+- **Multiple Recommender Techniques**: content-based, collaborative, session-based, hybrid.  
+- **Fairness Analysis**: identifying and discussing bias in recommendations.  
+- **Reproducibility**: modular notebooks, clean workflow, requirements file.  
+- **Real-World Tradeoffs**: balancing accuracy, diversity, and fairness.  
+
+## 📌 Next Steps
+- Explore deep learning recommenders (transformers for session modeling).  
+- Integrate fairness-aware re-ranking strategies.  
+- Deploy as an interactive Streamlit demo.  
